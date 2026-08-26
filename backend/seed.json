@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Cyber Vegetable Calculator",
+    "description": "Quantity and price calculator for kg and gram inputs.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "githubUrl": "#",
+    "liveUrl": "#"
+  },
+  {
+    "title": "Anime Character Quiz",
+    "description": "Cyberpunk quiz interface with scoring and interactive character questions.",
+    "technologies": ["JavaScript", "CSS", "DOM"],
+    "githubUrl": "#",
+    "liveUrl": "#"
+  },
+  {
+    "title": "2D Retro Adventure",
+    "description": "Browser retro-platformer concept built with original assets and game logic.",
+    "technologies": ["HTML5", "Canvas", "JavaScript"],
+    "githubUrl": "#",
+    "liveUrl": "#"
+  }
+]

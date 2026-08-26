@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cyberpunk neon personal portfolio">
+  <title>SWAROOP.DEV // CYBER PORTFOLIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <canvas id="matrix"></canvas>
+
+  <header class="nav">
+    <a class="logo" href="#home"><span>◈</span> SWAROOP<span class="cyan">.DEV</span></a>
+    <button class="menu" id="menu" aria-label="Open menu">☰</button>
+    <nav id="navLinks">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">SYSTEM ONLINE // PORTFOLIO INITIALIZED</p>
+        <h1><span class="glitch" data-text="SWAROOP Y.S.">SWAROOP Y.S.</span></h1>
+        <h2>FULL-STACK <span>DEVELOPER</span></h2>
+        <p class="lead">I build futuristic web experiences, functional applications and digital interfaces where clean code meets cyberpunk energy.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">VIEW PROJECTS</a>
+          <a class="btn" href="#contact">CONNECT_</a>
+        </div>
+        <div class="status">
+          <span class="dot"></span> AVAILABLE FOR PROJECTS
+          <span class="sep">|</span> INDIA
+        </div>
+      </div>
+
+      <div class="terminal reveal">
+        <div class="terminal-top"><span></span><span></span><span></span><b>root@swaroop:~</b></div>
+        <div class="terminal-body">
+          <p><i>&gt;</i> booting developer_profile...</p>
+          <p><i>&gt;</i> loading skills...</p>
+          <p class="cyan">[OK] JavaScript</p>
+          <p class="purple">[OK] Node.js / Express</p>
+          <p class="cyan">[OK] MongoDB</p>
+          <p class="purple">[OK] HTML / CSS</p>
+          <p><i>&gt;</i> status: <strong>READY_</strong><span class="cursor">█</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-title reveal"><span>01 //</span><h2>USER PROFILE</h2></div>
+      <div class="about-grid">
+        <div class="hud-card reveal">
+          <p class="label">IDENTITY</p>
+          <h3>Creative developer with a builder mindset.</h3>
+          <p>I enjoy turning ideas into polished, responsive and useful web products. My focus is on practical functionality, strong UI and learning modern full-stack development.</p>
+          <div class="chips"><span>WEB</span><span>UI/UX</span><span>FULL-STACK</span><span>PROBLEM SOLVING</span></div>
+        </div>
+        <div class="stats reveal">
+          <div><b>01</b><span>CURIOUS<br>BUILDER</span></div>
+          <div><b>24/7</b><span>LEARNING<br>MODE</span></div>
+          <div><b>∞</b><span>IDEAS<br>LOADING</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-title reveal"><span>02 //</span><h2>TECH STACK</h2></div>
+      <div class="skills-grid">
+        <div class="skill reveal"><div><span>HTML</span><b>95%</b></div><div class="bar"><span style="width:95%"></span></div></div>
+        <div class="skill reveal"><div><span>CSS</span><b>90%</b></div><div class="bar"><span style="width:90%"></span></div></div>
+        <div class="skill reveal"><div><span>JAVASCRIPT</span><b>90%</b></div><div class="bar"><span style="width:90%"></span></div></div>
+        <div class="skill reveal"><div><span>NODE.JS</span><b>80%</b></div><div class="bar"><span style="width:80%"></span></div></div>
+        <div class="skill reveal"><div><span>EXPRESS</span><b>80%</b></div><div class="bar"><span style="width:80%"></span></div></div>
+        <div class="skill reveal"><div><span>MONGODB</span><b>75%</b></div><div class="bar"><span style="width:75%"></span></div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-title reveal"><span>03 //</span><h2>MISSION ARCHIVE</h2></div>
+      <div id="projectGrid" class="projects"></div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-title reveal"><span>04 //</span><h2>ESTABLISH CONNECTION</h2></div>
+      <div class="contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">INCOMING TRANSMISSION</p>
+          <h3>Have a project in mind?</h3>
+          <p>Send a message through the secure terminal. Your transmission will be stored by the backend API.</p>
+          <div class="contact-links">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GITHUB ↗</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
+          </div>
+        </div>
+        <form id="contactForm" class="contact-form reveal">
+          <label>NAME<input name="name" required placeholder="ENTER NAME"></label>
+          <label>EMAIL<input name="email" type="email" required placeholder="ENTER EMAIL"></label>
+          <label>MESSAGE<textarea name="message" rows="6" required placeholder="TYPE TRANSMISSION..."></textarea></label>
+          <button class="btn primary" type="submit">SEND TRANSMISSION</button>
+          <p id="formStatus" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 SWAROOP.DEV // ALL SYSTEMS NOMINAL</footer>
+  <script src="script.js"></script>
+</body>
+</html>
