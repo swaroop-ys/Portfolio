@@ -1,4 +1,4 @@
-# SWAROOP.DEV — Cyberpunk Full-Stack Portfolio
+# SWAROOP.DEV — Full-Stack Portfolio
 
 A responsive neon/cyberpunk personal portfolio using HTML/CSS/JavaScript, Node.js, Express and MongoDB.
 
